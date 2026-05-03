@@ -101,7 +101,7 @@ document.body.style.cssText = `
         user-select: none;
     `;
     
-    let i = 1;
+    let i = 0;
     btnInc.addEventListener("click", event => {
         i++;
     let product = document.createElement("div");
@@ -125,9 +125,11 @@ document.body.style.cssText = `
     content.appendChild(product);
 })
 btnDec.addEventListener("click", event => {
-    i--;
-    window.scrollTo(0, document.body.scrollHeight);
-    content.lastElementChild.remove();
+    if (i > 0) {
+        i--;
+        window.scrollTo(0, document.body.scrollHeight);
+        content.lastElementChild.remove();
+    }
 })
 
 
