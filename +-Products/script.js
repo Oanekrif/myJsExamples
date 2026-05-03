@@ -136,6 +136,6 @@ btnDec.addEventListener("click", event => {
 let footer = document.createElement("footer");
 footer.className = "footer";
 footer.style.cssText = "background-color:rgb(35,169,110);font-size:26px;text-align:center;padding:20px;color:white;";
-footer.textContent = "Copyright 2026";
+footer.textContent = "© Copyright 2026";
 
 document.body.append(btnDec, btnInc, header, content, footer);
