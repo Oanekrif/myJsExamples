@@ -1,3 +1,5 @@
+window.prompt("Click anywere to add paragrape...");
+
 let elements = [];
 let i = 1;
 

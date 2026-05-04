@@ -1,3 +1,5 @@
+window.prompt("check the checkbox for valid the link...");
+
 // ======= HEAD elements =======
 document.title = "Document Test";
 
