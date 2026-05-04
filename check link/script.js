@@ -1,4 +1,4 @@
-window.prompt("check the checkbox for valid the link...");
+window.alert("check the checkbox for valid the link...");
 
 // ======= HEAD elements =======
 document.title = "check link";
