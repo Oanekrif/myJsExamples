@@ -1,7 +1,7 @@
 window.prompt("check the checkbox for valid the link...");
 
 // ======= HEAD elements =======
-document.title = "Document Test";
+document.title = "check link";
 
 // meta viewport & charset (normally in HTML head)
 let charset = document.createElement("meta");
