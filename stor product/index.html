@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS MIP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Formulaire d'ajout de produit-->
+    <div id="form">
+        <button id="closeBTN">X</button>
+        <form action="index.html" method="post">
+            <input name="id" type="text" placeholder="Id">
+            <input name="nom" type="text" placeholder="Nom">
+            <input name="prix" type="text" placeholder="Prix">
+            <input name="categorie" type="text" placeholder="Catégorie">
+            <input type="submit" id="addBTN" value="Ajouter">
+        </form>
+    </div>
+    <!--Tableau des produits-->
+    <div id="tableau">
+        <button id="btnForm">+</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nom</th>
+                    <th>Prix</th>
+                    <th>Catégorie</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+
+            </tbody>
+
+        </table>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
