@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>All Notes</title>
+</head>
+
+<body>
+    <h1>Notes</h1>
+    
+    <form action="/notes" method="get">
+        <label for="searchInput">Search: </label>
+        <input type="text" name="searchTerm" id="searchInput">
+        <button>Search</button>
+    </form>
+    
+    <% notes.slice().reverse().forEach(note=> {%>
+        <ul>
+            <li>
+                <h2>
+                    <%=note.title%>
+                </h2>
+                <p>
+                    <%=note.content.substring(0, 200)%> ...
+                </p>
+                <p>
+                    <%=new Date(note.timestamp)%>
+                </p>
+                <a href="/notes/<%=note.id %>">View More</a>
+            </li>
+        </ul>
+        <%})%>
+        
+        <a href="/creatNote">Creat New Note</a>
+</body>
+
+</html>
